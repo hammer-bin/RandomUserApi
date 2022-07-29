@@ -11,6 +11,14 @@
 		89968E7928947475006733E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89968E7828947475006733E3 /* ContentView.swift */; };
 		89968E7B2894747A006733E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89968E7A2894747A006733E3 /* Assets.xcassets */; };
 		89968E7E2894747A006733E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89968E7D2894747A006733E3 /* Preview Assets.xcassets */; };
+		89968E86289474B9006733E3 /* ProfileImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89968E85289474B9006733E3 /* ProfileImgView.swift */; };
+		89968E892894760E006733E3 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 89968E882894760E006733E3 /* URLImage */; };
+		89968E8B2894760E006733E3 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 89968E8A2894760E006733E3 /* URLImageStore */; };
+		89968E8D28947997006733E3 /* RandomUserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89968E8C28947997006733E3 /* RandomUserRowView.swift */; };
+		89968E9028947CFD006733E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 89968E8F28947CFD006733E3 /* Alamofire */; };
+		89968E9328947EF1006733E3 /* RandomUser+ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89968E9228947EF1006733E3 /* RandomUser+ResponseData.swift */; };
+		89968E95289481FB006733E3 /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89968E94289481FB006733E3 /* RandomUserViewModel.swift */; };
+		89968E9828948BA6006733E3 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 89968E9728948BA6006733E3 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,10 @@
 		89968E7828947475006733E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89968E7A2894747A006733E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89968E7D2894747A006733E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89968E85289474B9006733E3 /* ProfileImgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImgView.swift; sourceTree = "<group>"; };
+		89968E8C28947997006733E3 /* RandomUserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRowView.swift; sourceTree = "<group>"; };
+		89968E9228947EF1006733E3 /* RandomUser+ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUser+ResponseData.swift"; sourceTree = "<group>"; };
+		89968E94289481FB006733E3 /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89968E9028947CFD006733E3 /* Alamofire in Frameworks */,
+				89968E9828948BA6006733E3 /* Introspect in Frameworks */,
+				89968E8B2894760E006733E3 /* URLImageStore in Frameworks */,
+				89968E892894760E006733E3 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +67,8 @@
 		89968E7528947475006733E3 /* RandomUserApi */ = {
 			isa = PBXGroup;
 			children = (
+				89968E9128947ED0006733E3 /* Data */,
+				89968E842894749D006733E3 /* UI */,
 				89968E7628947475006733E3 /* RandomUserApiApp.swift */,
 				89968E7828947475006733E3 /* ContentView.swift */,
 				89968E7A2894747A006733E3 /* Assets.xcassets */,
@@ -65,6 +83,24 @@
 				89968E7D2894747A006733E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89968E842894749D006733E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				89968E85289474B9006733E3 /* ProfileImgView.swift */,
+				89968E8C28947997006733E3 /* RandomUserRowView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		89968E9128947ED0006733E3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				89968E9228947EF1006733E3 /* RandomUser+ResponseData.swift */,
+				89968E94289481FB006733E3 /* RandomUserViewModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,12 @@
 			dependencies = (
 			);
 			name = RandomUserApi;
+			packageProductDependencies = (
+				89968E882894760E006733E3 /* URLImage */,
+				89968E8A2894760E006733E3 /* URLImageStore */,
+				89968E8F28947CFD006733E3 /* Alamofire */,
+				89968E9728948BA6006733E3 /* Introspect */,
+			);
 			productName = RandomUserApi;
 			productReference = 89968E7328947475006733E3 /* RandomUserApi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,11 @@
 				Base,
 			);
 			mainGroup = 89968E6A28947475006733E3;
+			packageReferences = (
+				89968E872894760E006733E3 /* XCRemoteSwiftPackageReference "url-image" */,
+				89968E8E28947CFD006733E3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				89968E9628948BA6006733E3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 89968E7428947475006733E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				89968E7928947475006733E3 /* ContentView.swift in Sources */,
+				89968E8D28947997006733E3 /* RandomUserRowView.swift in Sources */,
+				89968E9328947EF1006733E3 /* RandomUser+ResponseData.swift in Sources */,
+				89968E86289474B9006733E3 /* ProfileImgView.swift in Sources */,
+				89968E95289481FB006733E3 /* RandomUserViewModel.swift in Sources */,
 				89968E7728947475006733E3 /* RandomUserApiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +390,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89968E872894760E006733E3 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		89968E8E28947CFD006733E3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		89968E9628948BA6006733E3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89968E882894760E006733E3 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89968E872894760E006733E3 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		89968E8A2894760E006733E3 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89968E872894760E006733E3 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		89968E8F28947CFD006733E3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89968E8E28947CFD006733E3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		89968E9728948BA6006733E3 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89968E9628948BA6006733E3 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89968E6B28947475006733E3 /* Project object */;
 }
